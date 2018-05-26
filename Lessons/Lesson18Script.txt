@@ -1,0 +1,26 @@
+Hi,
+
+I am the programming mentor for FTC team 3543. In preparation of the start of the FTC season, I decided to develop some training material for our new student programmers. It is a series of programming challenges starting from the very basic to somewhat advanced topics such as multi-tasking and PID control. Here is a preview of one of the more advanced challenges. In this challenge, we are basically doing a simple line follower or more correctly an edge follower with a twist. Here are the details of the challenge:
+
+1. The edge follower is employing a simple Proportion-only PID control to make the edge following much smoother.
+2. The robot has a sonar sensor. We use it to detect if there is an obstacle in front and stop the robot. This is useful for having several edge following robots on the field and not running into each other.
+3. The robot also has a touch sensor in front. We use it as an ON/OFF switch to start and pause the program.
+4. Finally, here is the twist, the robot is following the edge while playing a song in the background. This demonstrates the multi-tasking capability of the code.
+
+Regarding the robot itself. It is a simple tribot configuration with the left and right wheels and a pivot tail. The left wheel motor is on motor port C. The right wheel motor is on motor port A. The front of the robot is fully loaded with various sensors. Currently, we have a gyro sensor on port 1, a LEGO light sensor on port 2, the sonar sensor is on port 3 and the touch sensor is on port 4.
+
+Regarding the field, it is a standard LEGO field came with the retail version of the NXT Mindstorms. You can certainly make your own interesting field.
+
+Without further ado, here is a demo of the resulting code. The robot is already calibrated with the white background and the black lines on the field. The code is programmed to following the left edge of the line. So let's put the robot on the outside of the oval track and run the program.
+
+Notice the robot is not moving yet because the code is waiting for the touch switch to be pressed. Let's push the touch switch.
+
+Now you can see the robot turns a little and quickly finds the edge of the line then it follows it along happily. Also notice the robot is playing the Les Miserable song in the background. The song is played in a loop, so it will never end.
+
+Now let's test the sonar sensor. The code is programmed to stop the robot if there is an obstacle in front of it that's less than 25 cm away. So if I put my hand in front of it, you will see it stops. If I move my hand away, it continues. Also notice the song never stops.
+
+However, if I press the touch switch again, the robot as well as the song will stop. Now if I press the touch switch again, the robot and the song will resume.
+
+So there it is. Feel free to build a similar robot and program it with similar code. Post your video when you are done. In the next month or so I will post how this code is done.
+
+Thank you for watching.
